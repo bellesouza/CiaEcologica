@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F4F4F9;
+    color: #333;
+}
+
+header {
+    background-color: #A4C639;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e menu à direita */
+    align-items: center;
+}
+
+.logo {
+  /*   flex: 0 0 150px;  Define a largura máxima da logo */
+	width: 100px;
+	margin: 50 auto;
+    height: 25px;
+    max-width: 10%; 
+
+
+}
+
+
+
+nav {
+    flex: 1; /* Garante que o menu ocupe o restante do espaço */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinha os links do menu à direita */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ... seu CSS existente ... */
+
+.carousel-slide {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #777;
+  }
+
+main {
+    padding: 100px;
+    margin: 0 20px;
+    Text-align:left
+}
+
+
+
+h1, h2 {
+    color: #A4C639;
+    
+
+
+}
+.reservas {
+    Text-align:right;
+
+}
+
+section {
+    margin-bottom: 100px;
+   
+   }
+
+ul {
+    list-style: square;
+    margin: 20px 0;
+ 
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    min-width: 50%;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFA726;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+#carousel-info {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #FF5722;
+}
+
+/* Buttons */
+.btn-navigate {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.btn-navigate:hover {
+    background-color: #E64A19;
+}
+
+/* Footer */
+footer {
+    background-color: #6D4C41;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #A4C639;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8EBF34;
+}

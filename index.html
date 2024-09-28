@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ecologia e Preservação Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="CiaEco.png" alt="Logo do Projeto">
+            </div>
+            <ul>
+                <li><a href="#reservas-naturais">Reservas Naturais</a></li>
+                <li><a href="#coleta-seletiva">Coleta Seletiva</a></li>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel-dots"></div>
+        <!-- Carrossel de Imagens -->
+        <section id="carousel">
+            <h2>Explore as Reservas Naturais</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="image.png" alt="Cataratas do Iguaçu" data-info="Cataratas do Iguaçu: Patrimônio Natural da Humanidade.">
+                    <img src="image (1).png" alt="Reserva Biológica das Araucárias" data-info="Reserva Biológica das Araucárias: Proteção de espécies ameaçadas.">
+                    <img src="vilavelha.jpg" alt="Parque Vila Velha" data-info="Parque Estadual Vila Velha: Formações rochosas e biodiversidade.">
+                </div>
+                <button class="carousel-prev">←</button>
+                <button class="carousel-next">→</button>
+            </div>
+            <p id="carousel-info"></p>
+        </section>
+
+        <!-- Botão de navegação -->
+        <button class="btn-navigate" onclick="window.location.href='#coleta-seletiva'">Saiba Mais sobre Coleta Seletiva</button>
+
+        <!-- Reservas Naturais -->
+        <div class="reservas">
+        <section id="reservas-naturais">
+            <h1>Belezas Naturais e Preservação no Paraná</h1>
+            <p>O estado do Paraná é lar de inúmeras reservas naturais, reconhecidas pela sua biodiversidade e importância ecológica.</p>
+            <ul>
+                <li><strong>Parque Nacional do Iguaçu:</strong> Lar das Cataratas do Iguaçu, Patrimônio Natural da Humanidade.</li>
+                <li><strong>Reserva Biológica das Araucárias:</strong> Proteção do bioma das Araucárias e espécies ameaçadas.</li>
+                <li><strong>Parque Estadual Vila Velha:</strong> Conhecido pelas formações rochosas e biodiversidade.</li>
+            </ul>
+        </section>
+       </div>
+
+        <!-- Coleta Seletiva -->
+        <section id="coleta-seletiva">
+            <h2>A Importância da Coleta Seletiva</h2>
+            <p>A coleta seletiva é fundamental para a sustentabilidade, permitindo que materiais recicláveis sejam reaproveitados.</p>
+            <ul>
+                <li><strong>Papel:</strong> Jornais, caixas, papelão.</li>
+                <li><strong>Plástico:</strong> Garrafas PET, sacolas, embalagens plásticas.</li>
+                <li><strong>Vidro:</strong> Garrafas, frascos de vidro.</li>
+                <li><strong>Metal:</strong> Latas de alumínio, ferragens.</li>
+                <li><strong>Orgânicos:</strong> Restos de alimentos, folhas.</li>
+            </ul>
+        </section>
+
+        <!-- Botão de navegação -->
+        <button class="btn-navigate" onclick="window.location.href='#sobre'">Sobre o Projeto</button>
+
+        <!-- Sobre o Projeto -->
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia turpis sit amet metus fermentum.</p>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário abaixo para entrar em contato conosco e receber flyers e novidades sobre preservação ambiental.</p>
+            <form id="contactForm">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <label for="newsletter">Deseja receber nosso flyer com novidades?</label><br>
+                <input type="checkbox" id="newsletter" name="newsletter"> Sim, quero receber!<br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ecologia e Preservação Ambiental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
