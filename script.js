@@ -39,6 +39,7 @@ document.querySelector('.carousel-prev').addEventListener('click', () => {
 });
 
 // Criar os pontos do indicador
+// Criar os pontos do indicador
 for (let i = 0; i < carouselImages.length; i++) {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -50,13 +51,15 @@ for (let i = 0; i < carouselImages.length; i++) {
     carouselDots.appendChild(dot);
 }
 
+
+
 // Autoplay (opcional)
 let autoplayInterval;
 function startAutoplay() {
     autoplayInterval = setInterval(() => {
         currentSlide = (currentSlide + 1) % carouselImages.length;
         showSlide(currentSlide);
-    }, 3000); // Muda o slide a cada 3 segundos
+    }, 5000); // Muda o slide a cada 5 segundos
 }
 startAutoplay();
 
