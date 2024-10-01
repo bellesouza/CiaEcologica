@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.2;
+    font-family:'Space Grotesk', sans-serif;
+    line-height: 1.8;
     background-color: #F4F4F9;
     color: #000000;
 }
@@ -22,15 +22,25 @@ header {
 
 .logo {
   /*     Define a largura máxima da logo */
-  flex: 0 0 20000px;
+  flex: 0 0 2000px;
 	width: 270px;
 	margin: 40 auto;
     height: 30px;
-   
+    box-sizing: border-box;
+
 
 
 }
-
+h2 {
+    display: inline-flex;
+    font-size: 1.9em;
+    margin-block-start:2em;
+    margin-block-end: 1em;
+    margin-inline-start: 70px;
+    margin-inline-end: 20px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 
 
 nav {
@@ -44,7 +54,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 40px;
+    margin: 0 18px;
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -52,8 +62,8 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight:bolder;
-    font-size: 1.1em;
-    height: 60px;
+    font-size: 1.2em;
+    height: 70px;
 }
 
 .carousel-slide {
@@ -66,6 +76,9 @@ nav ul li a {
     bottom: 20px;
     left: 0;
     width: 100%;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: 50% 50%;
     text-align: center;
     color: white;
   }
@@ -99,7 +112,7 @@ main {
 
 
 h1, h2 {
-    color: #A4C639;
+    color: #677900;
     
 
 
@@ -124,7 +137,7 @@ h1, h2 {
 
 .reserva-item img {
     border-radius: 15px;
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -190,7 +203,7 @@ img {
 
 .carousel-slide img {
     min-width: 100%;
-    height: 20%;
+   
 }
 
 .carousel-prev, .carousel-next {
@@ -233,7 +246,7 @@ img {
 
 /* Footer */
 footer {
-    background-color: #6D4C41;
+    background-color: #290d03;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -255,7 +268,7 @@ input[type="text"], input[type="email"], textarea {
 }
 
 input[type="submit"] {
-    background-color: #A4C639;
+    background-color: #677900;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -263,5 +276,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #8EBF34;
+    background-color: #677900;
 }
