@@ -34,9 +34,9 @@ header {
 h2 {
     display: inline-flex;
     font-size: 1.9em;
-    margin-block-start:2em;
+    margin-block-start:0.2em;
     margin-block-end: 1em;
-    margin-inline-start: 70px;
+    margin-inline-start: 20px;
     margin-inline-end: 20px;
     font-weight: bold;
     unicode-bidi: isolate;
