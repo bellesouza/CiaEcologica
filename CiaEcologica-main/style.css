@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Space Grotesk', sans-serif;
+    line-height: 1.8;
+    background-color: #F4F4F9;
+    color: #000000;
+}
+
+header {
+    background-color: #677900;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e menu à direita */
+    align-items: center;
+}
+
+
+.logo {
+  /*     Define a largura máxima da logo */
+  flex: 0 0 2000px;
+	width: 270px;
+	margin: 40 auto;
+    height: 30px;
+    box-sizing: border-box;
+
+
+
+}
+h2 {
+    display: inline-flex;
+    font-size: 1.9em;
+    margin-block-start:0.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+nav {
+    flex: 1; /* Garante que o menu ocupe o restante do espaço */
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: flex-end; /* Alinha os links do menu à direita */
+}
+
+nav ul li {
+    margin: 0 18px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: 1.2em;
+    height: 70px;
+}
+
+.carousel-slide {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-dots {
+    text-align:center;
+    margin-top: 1px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #f7c82e;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #777;
+  }
+
+main {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 50px;
+    margin: 0 20px;
+    Text-align:left
+}
+
+
+
+h1, h2 {
+    color: #677900;
+    
+
+
+}
+.reservas {
+    Text-align:right;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.reserva-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reserva-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.reserva-item img {
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* Estilos para o carrossel */
+.carousel-slide img {
+    border-radius: 15px;
+}
+
+.carousel-prev, .carousel-next {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1cm;
+}
+
+.carousel-prev {
+    left: -50px;
+}
+
+.carousel-next {
+    right: -50px;
+}
+
+
+section {
+    margin-bottom: 10px;
+   
+   }
+
+ul {
+    list-style: square;
+    margin: 20px 0;
+ 
+
+
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+      
+
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 2px;
+    
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    min-width: 100%;
+   
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #edc724;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+#carousel-info {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #ee9e40;
+}
+
+/* Buttons */
+.btn-navigate {
+    background-color: #edc724;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.btn-navigate:hover {
+    background-color: #edc724;
+}
+
+/* Footer */
+footer {
+    background-color: #290d03;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #677900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #677900;
+}
