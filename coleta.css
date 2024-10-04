@@ -5,124 +5,172 @@
 }
 
 body {
-    font-family:'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.8;
     background-color: #F4F4F9;
     color: #000000;
 }
 
 header {
-    background-color: #677900;
-    padding: 10px;
+    background-color: #677900; /* Cor de fundo verde */
+    padding: 0px 20px;
     display: flex;
-    justify-content: space-between; /* Logo à esquerda e menu à direita */
+    justify-content: space-between;
     align-items: center;
 }
 
-
-.logo {
-  /*     Define a largura máxima da logo */
-  flex: 0 0 2000px;
-	width: 270px;
-	margin: 40 auto;
-    height: 30px;
-    box-sizing: border-box;
-
-
-
+.logo img {
+    width: 250px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
 }
-h1 {
-    display: inline-flex;
-    font-size: 1.9em;
-    margin-block-start:2em;
-    margin-block-end: 1em;
-    margin-inline-start: 70px;
-    margin-inline-end: 20px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-.Coleta {
-
-    Text-align:left;
-    font-family: 'Space Grotesk', sans-serif;
-    display: flex;
-    padding-left: 2cm;
-    padding-right: 20cm;
-
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-
 nav {
-    flex: 1; /* Garante que o menu ocupe o restante do espaço */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
-    list-style: none;
-    display:flex;
-    justify-content: flex-end; /* Alinha os links do menu à direita */
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li {
-    margin: 0 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    margin: 0 15px;
+    list-style: none;
+
+    position: relative;
 }
+nav ul li:not(:first-child)::before {
+   
+    position: absolute;
+    left: -10px;
+    color: white;}
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight:bolder;
+    font-weight: bold;
     font-size: 1.2em;
-    height: 70px;
+    line-height: 1px ;
+    padding-top: 10px;
 }
 
-h1, h2 {
-    color: #677900;
+    
+.coleta-seletiva{
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #4c611b;
+}
+
+main {
+    margin: 70px;
+    list-style: none;
+
+    justify-content: center;
+}
+
+.oQueE ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+.info1 ul{
+    font-size: 20px;
+    list-style-type: none;
+    justify-content: center;
+}
+.infos ul{
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+h4{
+    text-align:center;
+    font-size: 40px;
+    padding: 40px;
+    line-height: 2em;
+}
+
+h2{
+    padding: 20px;
+    line-height: 1em;
+    text-align:center;
+
+}
+
+h5{
+    text-align:center;
+    font-size: 40px;
+    padding: 14px;
+    line-height: 1em;
+}
+.text-left {
+    flex: 2;
+    list-style: none;
+    margin: 40px;
+    justify-content: center;
+}
+
+.text-right{
+    flex: 9;
+    list-style: none;
+    margin: 40px;
+    justify-content: center;
+}
+
+.image-right  {
+   border-radius: 19px;
+    width: 950px;
+    justify-content: left;
+    height: 9%;
+    border-radius: 90px;
+
 }
 
 
-
-section {
-    margin-bottom: 10px;
-   
-   }
-
-ul {
-    list-style: square;
-    margin: 20px 0;
- 
-
-
+.image-left {
+    flex: 2;
+    margin: 50px;
+ justify-content: right;
+    width: 10px;
+    height:fit-content;
 }
 
-img {
-    max-width: 100%;
-    height:auto;
-      
-
+.reciclagemItem ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
 }
 
+.reciclagemItem li {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
 
+.reciclagemItem img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
 footer {
     background-color: #290d03;
     color: white;
@@ -133,26 +181,48 @@ footer {
     width: 100%;
 }
 
-form {
-    margin-top: 20px;
-}
-
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
+.btn-navigate {
     background-color: #677900;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin: 20px 0;
 }
 
-input[type="submit"]:hover {
-    background-color: #677900;
+.btn-navigate:hover {
+    background-color: #556600;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .reciclagemItem ul {
+        flex-direction: column;
+    }
+
+    .reciclagemItem li {
+        margin-bottom: 20px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction:row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
