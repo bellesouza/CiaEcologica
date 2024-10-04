@@ -42,6 +42,11 @@ h2 {
     unicode-bidi: isolate;
 }
 
+.logo img {
+    width: 250px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
 
 nav {
     flex: 1; /* Garante que o menu ocupe o restante do espaço */
@@ -122,13 +127,14 @@ h1, h2 {
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .reserva-item {
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size: 18px;
 }
 
 .reserva-item.reverse {
