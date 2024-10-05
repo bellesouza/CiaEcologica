@@ -40,7 +40,7 @@ h2 {
     margin-inline-end: 20px;
     font-weight: bold;
     unicode-bidi: isolate;
-    padding-top: 2px;
+   
 }
 
 .logo img {
@@ -253,7 +253,14 @@ img {
 .btn-navigate:hover {
     background-color: #edc724;
 }
-
+h3{
+    font-size:25px ;
+    color: #677900;
+    padding-top: 7%;
+}
+.sobre {
+text-align: center ;
+}
 /* Footer */
 footer {
     background-color: #290d03;
